@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.username">b1_user</property>
+        <property name="hibernate.connection.password">m</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/b1_db</property>
+        <property name="hbm2ddl.auto">create</property>
+        <property name="show_sql">true</property>
+
+        <!-- MAPPINGS -->
+        <mapping class="kawori.miyazono.EmployeeEntity"/>
+        <mapping class="kawori.miyazono.MeasurementEntity"/>
+        <mapping class="kawori.miyazono.ModdaEntity"/>
+        <mapping class="kawori.miyazono.MonthlyPollutantReportEntity"/>
+        <mapping class="kawori.miyazono.SensorEntity"/>
+        <mapping class="kawori.miyazono.ServiceEntity"/>
+        <mapping class="kawori.miyazono.StationEntity"/>
+    </session-factory>
+
+</hibernate-configuration>
